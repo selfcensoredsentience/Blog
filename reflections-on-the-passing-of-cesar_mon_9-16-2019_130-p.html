@@ -33,7 +33,7 @@
      </nav>
 
      <!-- Page Header -->
-     <header class="masthead" style="background-image: url('img/the-frustrations-of-biology_mon_12-09-2019_100-p/journal_img-1-2-3.jpg')">
+     <header class="masthead" style="background-image: url('img/the-frustrations-of-biology_mon_12-09-2019_100-p/journal_img-1-2-3.png')">
           <div class="overlay"></div>
           <div class="container">
                <div class="row">
@@ -55,8 +55,6 @@
                <div class="row">
                     <div class="col-lg-8 col-md-10 mx-auto">
 
-                         
-
                          <!-- Section Heading -->
                          <h2 class="section-heading">I'm laying down in the sun at Zilker Park.</h2>
 
@@ -68,7 +66,8 @@
 
                          <!-- Image -->
                          <figure>
-                              <a href="img/the-frustrations-of-biology_mon_12-09-2019_100-p/cesar-guitar_1.jpg"><img class="img-fluid" src="img/the-frustrations-of-biology_mon_12-09-2019_100-p/cesar-guitar_1.jpg" alt="Cesar Playing guitar at a live show."></a>
+                              <img class="img-fluid" src="img/the-frustrations-of-biology_mon_12-09-2019_100-p/cesar-guitar_1.jpg" alt="Cesar Playing guitar at a live show.">
+                              
                               <figcaption class="caption text-muted">Cesar Playing guitar at a live show.</figcaption>
                          </figure>
 
@@ -98,49 +97,6 @@
 
 <!-- Custom scripts for this template -->
 <script src="js/clean-blog.min.js"></script>
-
-<script>
-// Open the Modal
-function openModal() {
-  document.getElementById("myModal").style.display = "block";
-}
-
-// Close the Modal
-function closeModal() {
-  document.getElementById("myModal").style.display = "none";
-}
-
-var slideIndex = 1;
-showSlides(slideIndex);
-
-// Next/previous controls
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
-
-// Thumbnail image controls
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("demo");
-  var captionText = document.getElementById("caption");
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-  }
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
-  captionText.innerHTML = dots[slideIndex-1].alt;
-}
-</script>
 
 </body>
 
